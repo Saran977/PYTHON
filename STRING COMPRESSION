@@ -1,0 +1,13 @@
+x="AAAARRRRRRSSECC"
+result=""
+c=1
+for i in range(len(x)):
+    if i==len(x)-1:
+        break
+    if x[i]==x[i+1]:
+        c=c+1
+    else:
+        result=result+x[i]+str(c)
+        c=1
+result=result+x[len(x)-1]+str(c)
+print("Result=",result)

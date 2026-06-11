@@ -1,0 +1,17 @@
+def cop(a,b):
+    return gcd(a,b)==1
+    
+def gcd(a,b):
+    while b!=0:
+        t=a%b
+        a=b
+        b=t
+    return a
+    
+n=int(input("Enter any number"))
+
+for a in range(5,n):
+    for b in range(4,a):
+        for c in range(3,b):
+            if c*c + b*b == a*a and cop(a,b) and cop(a,c) and cop(b,c):
+                print(a, b, c)

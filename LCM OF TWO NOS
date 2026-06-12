@@ -1,0 +1,13 @@
+a=int(input("Enter no 1: "))
+b=int(input("Enter no 2: "))
+big=max(a,b)
+res=0
+m=big
+while True:
+    if m%a == 0 and m%b == 0:
+        res=m
+        break
+    else:
+        m=m+big
+print("LCM=",res)
+        
